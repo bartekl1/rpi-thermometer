@@ -49,8 +49,10 @@ def get_temperature():
         w1_temperature = w1_sensor.get_temperature()
     except Exception:
         temperature = None
+        status = 'error'
     else:
         temperature = w1_temperature
+        status = 'ok'
 
     tz_name = str(tzlocal.get_localzone())
     tz = pytz.timezone(tz_name)
@@ -58,7 +60,7 @@ def get_temperature():
     iso = dt.isoformat()
 
     return {
-        "status": "ok",
+        "status": status,
         "date": iso,
         "temperature": temperature
     }
