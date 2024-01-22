@@ -1,0 +1,4 @@
+Flask
+pytz
+tzlocal
+w1thermsensor
