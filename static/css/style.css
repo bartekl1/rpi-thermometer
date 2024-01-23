@@ -1,0 +1,6 @@
+#temperature {
+    font-size: 100px;
+    color: var(--bs-emphasis-color);
+    text-align: center;
+    margin-top: 20px;
+}

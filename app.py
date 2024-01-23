@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for
+from flask import Flask, render_template, send_file
 import pytz
 import tzlocal
 
@@ -33,9 +33,24 @@ except Exception:
     pass
 
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_file('static/img/icon_x128.ico')
+
+
+@app.route('/manifest.json')
+def manifest():
+    return send_file('static/manifest.json')
+
+
+@app.route('/manifest_pl.json')
+def manifest_pl():
+    return send_file('static/manifest_pl.json')
+
+
 @app.route('/')
 def index():
-    return redirect(url_for('get_temperature'))
+    return render_template('index.html')
 
 
 @app.route('/api/temperature')
