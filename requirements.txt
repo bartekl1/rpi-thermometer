@@ -2,3 +2,4 @@ Flask
 pytz
 tzlocal
 w1thermsensor
+adafruit-circuitpython-dht
