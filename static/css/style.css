@@ -1,4 +1,4 @@
-#temperature {
+#temperature, #humidity {
     font-size: 100px;
     color: var(--bs-emphasis-color);
     text-align: center;
