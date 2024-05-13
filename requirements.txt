@@ -1,5 +1,7 @@
 Flask
 pytz
 tzlocal
+mysql-connector-python
+requests
 w1thermsensor
 adafruit-circuitpython-dht
