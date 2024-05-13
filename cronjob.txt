@@ -1,0 +1,1 @@
+*/10 * * * * cd "<PATH>" && python3 save_to_database.py
