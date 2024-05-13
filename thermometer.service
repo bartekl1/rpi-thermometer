@@ -5,9 +5,10 @@ Description=Thermometer
 After=network.target
 
 [Service]
-WorkingDirectory=/path/to/repo
-ExecStart=/usr/bin/python3 /path/to/repo/app.py
+WorkingDirectory=<PATH>
+ExecStart=/usr/bin/python3 <PATH>/app.py
 Restart=always
+User=<USERNAME>
 
 [Install]
 WantedBy=multi-user.target
